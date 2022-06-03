@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 import BarChart from "./components/BarChart";
 import LineChart from "./components/LineChart";
+import MapChart from "./components/MapChart";
 import PieChart from "./components/PieChart";
 import { UserData } from "./Data"
 
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="App">
+      <MapChart/>
       <div style={{width: 500}}>
         <BarChart chartData={userGainData}/>
         <LineChart chartData={userLostData}/>
